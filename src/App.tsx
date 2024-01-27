@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './App.css'
-import 'mapbox-gl/dist/mapbox-gl.css';
+import 'mapbox-gl/dist/mapbox-gl.css'
 import Map, { Source, Layer } from 'react-map-gl'
 import type { CircleLayer } from 'react-map-gl'
+import type { MapRef } from 'react-map-gl'
 import * as turf from '@turf/turf'
 
 // appx centero of Dublin
@@ -23,9 +24,12 @@ const depStyle: CircleLayer = {
 const warehouse = turf.featureCollection([turf.point(departureCoords)])
 
 function App() {
+  const mapRef = useRef<MapRef>(null)
   return (
     <div className="App">
       <Map
+        ref={mapRef}
+        reuseMaps
         key={Math.random()}
         mapboxAccessToken={process.env.REACT_APP_MAPBOX_API_KEY}
         initialViewState={{
