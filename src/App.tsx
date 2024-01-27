@@ -1,10 +1,9 @@
-import React, { useCallback, useEffect, useRef } from 'react'
-import './App.css'
-import 'mapbox-gl/dist/mapbox-gl.css'
-import Map, { Source, Layer } from 'react-map-gl'
-import type { CircleLayer } from 'react-map-gl'
-import type { MapRef } from 'react-map-gl'
 import * as turf from '@turf/turf'
+import 'mapbox-gl/dist/mapbox-gl.css'
+import { useCallback, useRef } from 'react'
+import type { CircleLayer, MapRef } from 'react-map-gl'
+import Map, { Layer, Source } from 'react-map-gl'
+import './App.css'
 
 // appx centero of Dublin
 const initialCoords = [-6.26031, 53.349805]
