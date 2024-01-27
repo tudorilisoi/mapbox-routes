@@ -82,7 +82,6 @@ function App() {
         <Source id="departure-data" type="geojson" data={warehouseFc}>
           <Layer {...departureProps} />
         </Source>
-        {/* x@ts-ignore */}
         <Source id="points-data" type="geojson" data={pointsFc}>
         <Layer {...pointsProps} />
         </Source>
