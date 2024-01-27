@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import 'mapbox-gl/dist/mapbox-gl.css';
 import Map, { Source, Layer } from 'react-map-gl'
 import type { CircleLayer } from 'react-map-gl'
 import * as turf from '@turf/turf'
