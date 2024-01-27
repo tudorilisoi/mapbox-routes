@@ -5,7 +5,7 @@ import type { CircleLayer, MapRef, SymbolLayer } from 'react-map-gl'
 import Map, { Layer, Source } from 'react-map-gl'
 import './App.css'
 
-// appx centero of Dublin
+// center of Dublin
 const initialCoords = [-6.26031, 53.349805]
 const departureCoords = [-6.26031, 53.349805]
 
@@ -24,9 +24,11 @@ const pointsProps: SymbolLayer = {
   id: 'points',
   type: 'symbol',
   layout:{
-    'icon-image': 'vehicle-icon',
-    'icon-size': 1,
-    'text-field': ['get', 'orderTime']
+    'icon-allow-overlap': true,
+    'icon-ignore-placement': true,
+    'icon-image': 'marker',
+    'icon-size': 5,
+    // 'text-field': ['get', 'key']
   }
   
 }
