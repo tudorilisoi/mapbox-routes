@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useCallback, useEffect, useRef } from 'react'
 import './App.css'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import Map, { Source, Layer } from 'react-map-gl'
@@ -25,11 +25,15 @@ const warehouse = turf.featureCollection([turf.point(departureCoords)])
 
 function App() {
   const mapRef = useRef<MapRef>(null)
+  const onMapLoad = useCallback(() => {
+    console.log('Map ref', mapRef.current)
+  }, [])
   return (
     <div className="App">
       <Map
         ref={mapRef}
-        reuseMaps
+        onLoad={onMapLoad}
+        reuseMaps={false}
         key={Math.random()}
         mapboxAccessToken={process.env.REACT_APP_MAPBOX_API_KEY}
         initialViewState={{
