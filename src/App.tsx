@@ -40,8 +40,10 @@ function App() {
           latitude: initialCoords[1],
           zoom: 11,
         }}
+        // see https://docs.mapbox.com/api/maps/styles/
+        // and https://github.com/mapbox/mapbox-gl-styles (seems obsolete)
         style={{ width: '100vw', height: 400 }}
-        mapStyle="mapbox://styles/mapbox/light-v11"
+        mapStyle="mapbox://styles/mapbox/navigation-day-v1"
       >
         <Source id="my-data" type="geojson" data={warehouse}>
           <Layer {...depStyle} />
