@@ -26,8 +26,9 @@ const pointsProps: SymbolLayer = {
   layout:{
     'icon-allow-overlap': true,
     'icon-ignore-placement': true,
-    'icon-image': 'marker',
-    'icon-size': 5,
+    'icon-image': 'jp-national-route-3',
+    // 'icon-image': 'marker',
+    'icon-size': 1,
     // 'text-field': ['get', 'key']
   }
   
