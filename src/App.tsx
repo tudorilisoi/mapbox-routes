@@ -40,7 +40,7 @@ function App() {
           latitude: initialCoords[1],
           zoom: 11,
         }}
-        style={{ width: 600, height: 400 }}
+        style={{ width: '100vw', height: 400 }}
         mapStyle="mapbox://styles/mapbox/light-v11"
       >
         <Source id="my-data" type="geojson" data={warehouse}>
