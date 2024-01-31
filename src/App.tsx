@@ -5,7 +5,7 @@ import type { CircleLayer, MapRef, SymbolLayer } from 'react-map-gl'
 import Map, { Layer, Source } from 'react-map-gl'
 import './App.css'
 
-// center of Dublin
+// appx. center of Dublin
 const initialCoords = [-6.26031, 53.349805]
 const departureCoords = [-6.26031, 53.349805]
 
