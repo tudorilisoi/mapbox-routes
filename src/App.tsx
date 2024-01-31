@@ -69,6 +69,7 @@ function App() {
       <Map
         ref={mapRef}
         onLoad={onMapLoad}
+        // NOTE in production it's more performant to reuse the map because rendering is quite expensive
         reuseMaps={false}
         key={'map'}
         mapboxAccessToken={process.env.REACT_APP_MAPBOX_API_KEY}
