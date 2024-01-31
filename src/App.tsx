@@ -38,7 +38,7 @@ const pointsProps: SymbolLayer = {
 
 const warehouseFc = turf.featureCollection([turf.point(departureCoords)])
 
-// a point is a standard geoJSON landmark which can be augmented with custom properties
+// NOTE a point is a standard geoJSON landmark which can be augmented with custom properties
 interface PT {
   orderTime:Number
   key:Number
