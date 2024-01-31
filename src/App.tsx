@@ -25,10 +25,12 @@ const pointsProps: SymbolLayer = {
   type: 'symbol',
   layout:{
     'icon-allow-overlap': true,
+    // NOTE this displays the icons regardless the zoom level
     'icon-ignore-placement': true,
+    // NOTE in the DevTools network tab there's JSON data for the available icons
     'icon-image': 'jp-national-route-3',
-    // 'icon-image': 'marker',
     'icon-size': 1,
+    // NOTE use this to add a text label over the icon 
     // 'text-field': ['get', 'key']
   }
   
