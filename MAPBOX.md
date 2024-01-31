@@ -1,6 +1,6 @@
 This is a PoC for the Mapbox route optimization API
 
-Given a number of geo locations, it applies a travelling salesman algorithm in order to determine the shortest path which satisfies the goal of visiting all the aforementioned points.
+Given a number of geo locations, it applies a travelling salesman algorithm in order to determine the shortest path which satisfies the goal of visiting all of them.
 
 It also demonstrates Mapbox styling (everything from streets to landmarks, markers, layers can be customized)
 
