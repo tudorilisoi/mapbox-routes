@@ -4,7 +4,7 @@ Given a number of geo locations, it applies a travelling salesman algorithm to d
 
 It also demonstrates basic Mapbox styling (as a side note, everything from streets to landmarks, markers, layers can be customized)
 
-We're using the official `mapbox-gl` and also helpers/utils on top of it:
+We're using the official `mapbox-gl` and helpers/utils on top of it:
 
 # Optimization (the end goal)
 
