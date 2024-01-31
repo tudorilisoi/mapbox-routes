@@ -2,7 +2,7 @@ This is a PoC for the Mapbox route optimization API
 
 Given a number of geo locations, it applies a travelling salesman algorithm to determine the shortest path which satisfies the goal of visiting all of them.
 
-It also demonstrates Mapbox styling (everything from streets to landmarks, markers, layers can be customized)
+It also demonstrates basic Mapbox styling (as a side note, everything from streets to landmarks, markers, layers can be customized)
 
 There are a number of libraries involved, the official `mapbox-gl` and also helpers/utils on top of it:
 
